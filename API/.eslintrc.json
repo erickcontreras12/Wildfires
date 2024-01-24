@@ -1,0 +1,54 @@
+{
+  "env": {
+    "jest": true,
+    "node": true,
+    "browser": false
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": { "requireConfigFile" : false },
+  "extends": ["prettier"],
+  "plugins": ["prettier", "import"],
+  "rules": {
+    "import/no-cycle": 2,
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 150,
+        "singleQuote": true,
+        "trailingComma": "all",
+        "endOfLine": "auto"
+      }
+    ],
+    "comma-dangle": "off",
+    "linebreak-style": 0,
+    "no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "next"
+      }
+    ],
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": false
+      }
+    ],
+    "max-len": [
+      "warn",
+      {
+        "code": 150
+      }
+    ],
+    // "no-underscore-dangle": [
+    //   "error"
+    // ],
+    "no-param-reassign": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src"]    
+      }
+    }
+  }
+}

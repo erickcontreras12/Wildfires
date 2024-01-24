@@ -50,4 +50,4 @@ Some helpful values that can help with the testing of the projects to validate r
 ### Author
 
 Erick Contreras 
-Email: erick.contreras@telusinternational.com, erick.contreras@telus.com or personal email me to eecontrerasg98@gmail.com
+Email: eecontrerasg98@gmail.com
